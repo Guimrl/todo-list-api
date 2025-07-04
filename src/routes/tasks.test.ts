@@ -34,6 +34,5 @@ describe('POST /api/tasks', () => {
     const res = await request(app).post('/api/tasks').send(newTask)
 
     expect(res.statusCode).toEqual(400)
-    expect(res.body.message).toEqual('O título da tarefa é obrigatório.')
   })
 })

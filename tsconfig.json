@@ -9,7 +9,8 @@
     "esModuleInterop": true /* Permite interoperabilidade com módulos CommonJS. */,
     "skipLibCheck": true /* Ignora a verificação de tipo de todos os arquivos de declaração (.d.ts). */,
     "forceConsistentCasingInFileNames": true /* Garante que as referências a arquivos sigam a mesma capitalização. */,
-    "resolveJsonModule": true /* Permite importar módulos com extensão .json. */
+    "resolveJsonModule": true /* Permite importar módulos com extensão .json. */,
+    "moduleResolution": "node"
   },
   "include": ["src/**/*.ts"] /* Inclui arquivos TypeScript do diretório src. */,
   "exclude": ["node_modules", "dist"] /* Exclui diretórios da compilação. */
