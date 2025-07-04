@@ -25,6 +25,17 @@ router.post('/tasks', async (req: Request, res: Response) => {
   }
 })
 
-// TODO: Adicionar rotas GET, PUT, DELETE aqui futuramente
+router.get('/tasks', async (req: Request, res: Response) => {
+  try {
+    const result = await pool.query('SELECT * FROM tasks ORDER BY created_at DESC')
+
+    res.status(200).json(result.rows)
+  } catch (err) {
+    console.error('Erro ao listar tarefas: ', err)
+    res.status(500).json({ message: 'Erro interno do servidor ao tentar listar tarefas.' })
+  }
+})
+
+// TODO: Adicionar rotas PUT, DELETE aqui futuramente
 
 export default router

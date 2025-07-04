@@ -36,3 +36,18 @@ describe('POST /api/tasks', () => {
     expect(res.statusCode).toEqual(400)
   })
 })
+
+describe('GET /api/tasks', () => {
+  beforeEach(async () => {
+    await pool.query('DELETE FROM tasks')
+    await pool.query("INSERT INTO tasks (title, description) VALUES ('Task A', 'Desc A')")
+    await pool.query("INSERT INTO tasks (title, description) VALUES ('Task B', 'Desc B')")
+  })
+
+  it('should return a list of tasks', async () => {
+    const res = await request(app).get('/api/tasks')
+
+    expect(res.statusCode).toEqual(200)
+    expect(res.body.length).toEqual(2)
+  })
+})
