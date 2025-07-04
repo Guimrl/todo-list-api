@@ -2,9 +2,7 @@
   "compilerOptions": {
     "target": "es2018" /* Especifica a versão do ECMAScript de saída. */,
     "module": "commonjs" /* Especifica o sistema de módulo de saída. */,
-    "lib": [
-      "es2018"
-    ] /* Inclui bibliotecas de declaração para o ambiente de destino. */,
+    "lib": ["es2018"] /* Inclui bibliotecas de declaração para o ambiente de destino. */,
     "outDir": "./dist" /* Redireciona a saída para o diretório especificado. */,
     "rootDir": "./src" /* Especifica o diretório raiz dos arquivos de entrada. */,
     "strict": true /* Habilita todas as opções de verificação de tipo estritas. */,
