@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2018" /* Especifica a versão do ECMAScript de saída. */,
+    "module": "commonjs" /* Especifica o sistema de módulo de saída. */,
+    "lib": [
+      "es2018"
+    ] /* Inclui bibliotecas de declaração para o ambiente de destino. */,
+    "outDir": "./dist" /* Redireciona a saída para o diretório especificado. */,
+    "rootDir": "./src" /* Especifica o diretório raiz dos arquivos de entrada. */,
+    "strict": true /* Habilita todas as opções de verificação de tipo estritas. */,
+    "esModuleInterop": true /* Permite interoperabilidade com módulos CommonJS. */,
+    "skipLibCheck": true /* Ignora a verificação de tipo de todos os arquivos de declaração (.d.ts). */,
+    "forceConsistentCasingInFileNames": true /* Garante que as referências a arquivos sigam a mesma capitalização. */,
+    "resolveJsonModule": true /* Permite importar módulos com extensão .json. */
+  },
+  "include": ["src/**/*.ts"] /* Inclui arquivos TypeScript do diretório src. */,
+  "exclude": ["node_modules", "dist"] /* Exclui diretórios da compilação. */
+}
