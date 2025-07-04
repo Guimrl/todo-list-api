@@ -6,7 +6,7 @@ const app = express()
 app.use(express.json())
 
 app.get('/', (req, res) => {
-  res.send('Olá da To-Do List API!')
+  res.send('Olá mundo!')
 })
 
 app.use('/api', tasksRoutes)
